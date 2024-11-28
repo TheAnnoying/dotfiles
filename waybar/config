@@ -1,0 +1,38 @@
+{
+    "layer": "top",
+    "margin-bottom": 0,
+    "reload_style_on_change": true,
+    "margin-top": 10,
+    "margin-left": 20,
+    "margin-right": 20,
+    "spacing": 0,
+
+    "modules-center": [ "custom/clock-time", "custom/clock-date" ],
+    "modules-left": [ "hyprland/workspaces", ],
+    "modules-right": [ "hyprland/language", "tray" ],
+
+    "hyprland/window": {
+        "rewrite": {
+            ".*Zen Browser.*": "Zen Browser",
+            ".*Steam.*": "Steam",
+	        ".*Windows 11.*": "Microsoft 365"
+        }
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 3
+    },
+    "hyprland/language": {
+        "format": "{long}"
+    },
+    "custom/clock-time": {
+        "format": "{}",
+        "exec" :"date +'%H:%M'",
+        "interval": 60
+    },
+    "custom/clock-date": {
+        "format": "{}",
+        "exec": "date +'%d.%m.%Y'",
+        "interval": 3600
+    }
+}

@@ -1,0 +1,53 @@
+* {
+    border: none;
+    font-size: 13px;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    color: rgb(29, 29, 29);
+    font-weight: bold;
+    font-style: normal;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-right,
+.modules-center,
+#workspaces {
+    border: 1px solid white;
+    background: #e5e2e2;
+    padding: 0 1px;
+    border-radius: 150px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    margin: 4px 3px;
+    border-radius: 150px;
+    border: 1px solid #b3b3b3;
+    background-color: #d1d1d1;
+    opacity: 0.7;
+}
+
+#workspaces button.active {
+    background: #d1d1d1;
+    border-radius: 15px;
+    min-width: 40px;
+    opacity: 1;
+}
+
+#custom-clock-date,
+#custom-clock-time,
+#language,
+#tray,
+#window {
+    padding: 0 20px;
+    margin: 4px 3px;
+    border: 1px solid #b3b3b3;
+    border-radius: 15px;
+    background-color: #d1d1d1;
+}
+
+#tray {
+    padding: 0 7px;
+}
